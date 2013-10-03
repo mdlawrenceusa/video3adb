@@ -6,7 +6,7 @@ gem 'aws-sdk', '~> 1.0'
 
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
