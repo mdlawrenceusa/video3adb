@@ -1,0 +1,35 @@
+<h1>Crenshaw Christian Center New York Video Archive</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Speaker</th>
+      <th>Title</th>
+ <!-- <th>Url es</th>
+      <th>Url msg</th> -->
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @video_lists.each do |video_list| %>
+      <tr>
+        <td><%= video_list.date %></td>
+        <td><%= video_list.speaker %></td>
+        <td><%= video_list.title %></td>
+ <!--   <td><%= video_list.url_es %></td>
+        <td><%= video_list.url_msg %></td> -->
+        <td><%= link_to 'Show', video_list %></td>
+        <td><%= link_to 'Edit', edit_video_list_path(video_list) %></td>
+        <td><%= link_to 'Destroy', video_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Video list', new_video_list_path %>

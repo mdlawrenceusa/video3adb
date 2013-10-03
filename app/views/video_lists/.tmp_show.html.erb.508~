@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @video_list.date %>
+</p>
+
+<p>
+  <strong>Speaker:</strong>
+  <%= @video_list.speaker %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @video_list.title %>
+</p>
+
+<p>
+  <strong>Url es:</strong>
+  <%= @video_list.url_es %>
+</p>
+
+<p>
+  <strong>Url msg:</strong>
+  <%= @video_list.url_msg %>
+</p>
+
+<%= link_to 'Edit', edit_video_list_path(@video_list) %> |
+<%= link_to 'Back', video_lists_path %>

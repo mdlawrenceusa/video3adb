@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<%= video_tag @video_list.url_msg, 
+									id: "video1",
+									controls: "controls",
+									type: "video/mp4" %>
+									
+<%= video_tag @video_list.url_es, 
+									id: "video2",
+									controls: "controls",
+									type: "video/mp4" %>
+
+<p>
+  <strong>Date:</strong>
+  <%= @video_list.date %>
+</p>
+
+<p>
+  <strong>Speaker:</strong>
+  <%= @video_list.speaker %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @video_list.title %>
+</p>
+
+<p>
+  <strong>Url es:</strong>
+  <%= @video_list.url_es %>
+</p>
+
+<p>
+  <strong>Url msg:</strong>
+  <%= @video_list.url_msg %>
+</p>
+
+<%= link_to 'Edit', edit_video_list_path(@video_list) %> |
+<%= link_to 'Back', video_lists_path %>
